@@ -1,0 +1,28 @@
+\documentclass[article,9pt,oneside,landscape]{memoir}
+\usepackage[paperheight=2.12in,paperwidth=3.62in]{geometry}
+\usepackage{fontspec}
+\usepackage[newdimens]{labels}
+\setmainfont[Numbers={OldStyle,Monospaced}]{Charter}
+\setsansfont{FiraSans}
+\LabelCols=1%
+\numberoflabels=1%
+\newcommand{\phonei}{+49\textendash157\textendash88684060}
+\newcommand{\emaili}{heller@port-zero.com}
+\newcommand{\emailii}{veit@veitheller.de}
+%
+\begin{document}
+\addresslabel[\fboxsep=1mm]{%
+    {%
+    \vspace{24ex}%
+    \raggedright{\Large\scshape Veit Heller}\\[0.5ex]
+    \textit{Technopessimist \& Software Development Consultant}
+    \vspace{5ex}
+    \hrule{}
+    \vspace{5ex}
+    \hfill{\small\textit{\phonei}}\\[1ex]%
+    \hfill{\small\sffamily{\emaili}}\\[0.5ex]%
+    \hfill{\small\sffamily{\emailii}}\\[1ex]%
+    \hfill{Berlin}\\[1ex]%
+    }%
+}
+\end{document}
